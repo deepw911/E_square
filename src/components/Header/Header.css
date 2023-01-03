@@ -1,0 +1,46 @@
+
+.NavbarItems{
+    background-color: #39A2DB;
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 1.2rem;
+}
+
+.logo{
+    margin-left:10px;
+}
+
+.navbar-logo{
+    /* color: #fff; */
+    justify-self: start;
+    cursor:pointer;
+    font-family: 'Dancing Script';
+}
+
+.nav-items{
+    color:black;
+    text-decoration: none;
+    padding:0.5rem 1rem;
+}
+
+/* .nav-items:hover{
+    background-color: #3C8DAD;
+    border-radius:4px;
+    transition: all 0.2s ease-out;
+} */
+
+.nav-menu{
+    display:grid;
+    grid-template-columns: repeat(4,auto);
+    grid-gap:10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    /* justify-content: end;
+    margin-right: 50px;
+    margin-left: 170px; */
+    font-family: "Montserrat",sans-serif; 
+    
+}
