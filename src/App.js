@@ -5,6 +5,7 @@ import Home from './components/Home/Home.jsx';
 import Footer from './components/Footer/Footer'
 import Services from './components/Services/Services'
 import Gallery from './components/Gallery/Gallery'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return(

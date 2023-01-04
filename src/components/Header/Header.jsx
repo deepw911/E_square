@@ -1,22 +1,39 @@
+import { Button } from 'bootstrap';
 import React from 'react';
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import './Header.css';
 
-function Header() {
+
+  import Container from 'react-bootstrap/Container';
+  import Nav from 'react-bootstrap/Nav';
+  import Navbar from 'react-bootstrap/Navbar';
+  
+  function Header() {
     return (
-      <nav lassName="NavbarItems" >
-        <h1 className="navbar-logo">E Square</h1>
-        <ul className='nav-menu'>
-            <li><AnchorLink href='#' className="nav-items">Home</AnchorLink>
-            </li>
-            <li><AnchorLink href='#services' className="nav-items">Services</AnchorLink>
-            </li>
-            <li>
-            <AnchorLink href='#gallery' className="nav-items">Gallery</AnchorLink>
-            </li>
-            <AnchorLink href='#' className="nav-items">Contact</AnchorLink>
-        </ul>
-      </nav>
+      <Navbar bg="light" expand="lg" sticky="top">
+        <Container  className='header-ee'>
+          <Navbar.Brand href="#home"> E Square </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#services">Services</Nav.Link>
+              <Nav.Link href="#gallery">Gallery</Nav.Link>
+              <Nav.Link href="#link">Contact</Nav.Link>
+            </Nav>
+            <Nav>
+            <Nav.Link href="#link" type='button'> Sign Up</Nav.Link>
+            <Nav.Link href="#link"> <i className="fa fa-brands fa-facebook"></i></Nav.Link>
+            <Nav.Link href="#link"> <i className="fa fa-brands fa-twitter"></i></Nav.Link>
+            <Nav.Link href="#link"> <i className="fa fa-brands fa-instagram"></i></Nav.Link>
+            {/* <RouteNavItem className="headerLinks" eventKey={1} href="/">Home</RouteNavItem> */}
+            </Nav>
+            <div>
+
+            {/* <Button variant="outline-success">Search</Button> */}
+            </div>
+          </Navbar.Collapse>
+        </Container> 
+      </Navbar>
     );
   }
   
