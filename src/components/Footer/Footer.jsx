@@ -1,16 +1,21 @@
 import React from "react";
 import './Footer.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Footer(){
     return (
-        <div className="footer-container">
+        <footer>
+            <div className="footer-container">
             {/* {logo and about esquare} */}
-            <div className="company">
+            <div className="footer-company">
                 <div>
-                 <img className="logoimg" 
+                    <div className='img-name'> 
+                        <img 
+                    className="logo-img" 
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1wwgdAltsp9IF6-2lfdE2ZEW_wJ1Kpb8D1Q&usqp=CAU"
-                    // style={{height: 75, width: 75}}
                 />
+                <h1>E-Square</h1>
+                </div>              
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fuga, 
                     beatae voluptas, dicta, provident id aliquam magni repudiandae accusamus 
                     sed architecto ab assumenda repellendus perspiciatis veniam vitae sit atque praesentium?
@@ -25,18 +30,25 @@ export default function Footer(){
                 </div>
             </div>
 
-            {/* address and contact details */}
-            <div className="contact">
-                <div>
-                    <p>Hinjewadi Phase 1, Pune, Maharasthra</p>
-                    <p>8999828044</p> <p>9552043123</p>
-                    <p>esquare@gmail.com</p>
-                </div>
-                <div>
-                    Copyrights 2020 <span>E-square</span> All rights Reserved.
-                </div>
+            {/* Links */}
+            <div className='footer-links'>
+                <h2> Links</h2>
+                <ul>
+                <li> <a href="#">Services</a>  </li>
+                <li> <a href="#">About us</a>  </li>
+                <li> <a href="#">Contact us</a>  </li>
+                </ul>       
             </div>
-           
-            
+
+
+            {/* address and contact details */}
+            <div className="footer-contact">
+                <h2>Contact Us</h2>
+                <p>Hinjewadi Phase 1, Pune, Maharasthra</p>
+                <p>8999828044</p> <p>9552043123</p>
+                <p>esquare@gmail.com</p>       
+            </div>
+              
         </div>
+        </footer>
     )};

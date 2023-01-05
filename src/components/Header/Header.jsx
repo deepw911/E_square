@@ -1,11 +1,11 @@
 import { Button } from 'bootstrap';
 import React from 'react';
 import './Header.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-  import Container from 'react-bootstrap/Container';
-  import Nav from 'react-bootstrap/Nav';
-  import Navbar from 'react-bootstrap/Navbar';
+import {Container} from 'react-bootstrap';
+import {Nav} from 'react-bootstrap';
+import {Navbar} from 'react-bootstrap';
   
   function Header() {
     return (
@@ -21,7 +21,7 @@ import './Header.css';
               <Nav.Link href="#link">Contact</Nav.Link>
             </Nav>
             <Nav>
-            <Nav.Link href="#link" type='button'> Sign Up</Nav.Link>
+            {/* <Nav.Link href="#link" type='button'> Sign Up</Nav.Link> */}
             <Nav.Link href="#link"> <i className="fa fa-brands fa-facebook"></i></Nav.Link>
             <Nav.Link href="#link"> <i className="fa fa-brands fa-twitter"></i></Nav.Link>
             <Nav.Link href="#link"> <i className="fa fa-brands fa-instagram"></i></Nav.Link>
